@@ -11037,18 +11037,6 @@ a.text-answer:hover, a.text-answer:focus {
   opacity: .6;
 }
 
-#carouselControl .carousel-inner .carousel-img-1 {
-  background-image: url("img/wed1.jpg") !important;
-}
-
-#carouselControl .carousel-inner .carousel-img-2 {
-  background-image: url("img/wed2.jpg") !important;
-}
-
-#carouselControl .carousel-inner .carousel-img-3 {
-  background-image: url("img/wed3.jpg") !important;
-}
-
 .marginTop {
   margin-top: 10%;
 }
@@ -11062,13 +11050,4 @@ a.text-answer:hover, a.text-answer:focus {
   background: #fffb00;
   bottom: 0;
   left: calc(50% - 20px);
-}
-
-.parallax {
-  background-image: url("3.jpg");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }

@@ -37,15 +37,7 @@ caption {
 }
 
 
-// .hoverable {
-//   box-shadow: 0 0px 15px #000000;
-//   transition-duration: 1s;
-// }
-
-
-
 @import "src/bootstrap-4.5.0/scss/bootstrap";
-
 
 
 // carousel
@@ -70,15 +62,6 @@ caption {
       }
     }
     
-    .carousel-img-1 {
-      background-image: url('img/wed1.jpg') !important;
-    }
-    .carousel-img-2 {
-      background-image: url('img/wed2.jpg') !important;
-    }
-    .carousel-img-3 {
-      background-image: url('img/wed3.jpg') !important;
-    }
   }
 }
 
@@ -101,13 +84,3 @@ caption {
   left: calc(50% - 20px);
 }
 
-// fixedimage 
-
-.parallax {
-  background-image: url("3.jpg");
-  min-height: 500px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
