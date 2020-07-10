@@ -1,0 +1,113 @@
+
+$theme-colors: (
+  "primary": #FFD43E,
+  "answer": #ff0000,
+);
+
+$marginTop: 10%;
+
+img {
+  max-width: 100%;
+}
+.carousel-caption {
+  padding-bottom: 150px !important;
+  text-align: left !important;
+}
+
+caption {
+  padding-bottom: 10px !important;
+  text-align: right !important;
+}
+
+
+.navbar-nav {
+  left: 30% !important;
+}
+.logo {
+  width: 15rem;
+}
+
+
+.hoverable {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  transition-duration: 0.2s;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+  }
+}
+
+
+// .hoverable {
+//   box-shadow: 0 0px 15px #000000;
+//   transition-duration: 1s;
+// }
+
+
+
+@import "src/bootstrap-4.5.0/scss/bootstrap";
+
+
+
+// carousel
+#carouselControl {
+  .carousel-inner {
+    .carousel-img {
+      height: 90vh;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+
+      &::after {
+        content: ""; // ::before and ::after both require content
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+        background: #000;
+        opacity: .6;
+      }
+    }
+    
+    .carousel-img-1 {
+      background-image: url('img/wed1.jpg') !important;
+    }
+    .carousel-img-2 {
+      background-image: url('img/wed2.jpg') !important;
+    }
+    .carousel-img-3 {
+      background-image: url('img/wed3.jpg') !important;
+    }
+  }
+}
+
+
+
+
+.marginTop {
+  margin-top: $marginTop;
+}
+
+
+.section-title h1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #fffb00;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+// fixedimage 
+
+.parallax {
+  background-image: url("3.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
