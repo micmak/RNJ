@@ -78,6 +78,13 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+    <div class="bottom-right text-white float-right mr-5">
+      <i style="font-size: 30px;" class="fab fa-facebook-f mt-2"></i><br>
+      <i style="font-size: 30px;"class="fab fa-twitter mt-2"></i><br>
+      <i style="font-size: 30px;"class="fab fa-snapchat-ghost mt-2"></i>
+
+
+  </div>
   </div> <!-- End carousel  -->
 
   <!-- Start MainPackage  -->
@@ -93,7 +100,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img class="w-100 shadow wow animate__fadeInLeft " data-wow-duration="1s" src="img/sec1.jpg" alt="" srcset="">
+        <img src="{% static 'img/sec1.jpg' %}" class="w-100 shadow wow animate__fadeInLeft" data-wow-duration="1s" alt="">
       </div>
       <div class="col-md-6 my-5 wow animate__fadeIn " data-wow-duration="1s">
         <p>My family photography sessions are bespoke, built just for you because every family is unique. But I know
@@ -119,31 +126,14 @@
         <button type="button" class="btn btn-primary my-5 text-dark">Price & Package</button>
       </div>
       <div class="col-md-6">
-
-
-        <img class="w-100 shadow wow animate__fadeInRight" data-wow-duration="1s" src="img/sec2.jpg" alt="" srcset="">
+        <img src="{% static 'img/sec2.jpg' %}" class="w-100 shadow wow animate__fadeInRight" data-wow-duration="1s" alt="">
       </div>
 
     </div>
   </div>
   <!-- End MainPackage  -->
 
-  <!-- Start senconSection -->
-  
-  <!-- <div class="parallax">
-
-    <div class="col-lg-12 text-center my-5 section-title">
-      <h1 class="my-5 wow animate__fadeIn" data-wow-duration="1s">A LITTLE BIT ABOUT ME</h1>
-
-    </div>
-    <div>
-      <p class="container wow animate__fadeIn" data-wow-duration="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quibusdam unde explicabo deserunt, cum consequuntur maxime et recusandae architecto accusantium dolores. Suscipit itaque consequuntur corrupti vel similique nisi aspernatur. Cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quibusdam unde explicabo deserunt.
-      </p>  
-      <img class="col-lg-12 wow animate__fadeInUp parallax" data-wow-duration="1s" src="img/panorama.jpg" >
-    </div>
-  </div>
-  </div> -->
-  <!-- End senconSection -->
+<!-- start fixed image   -->
   <div class="col-lg-12 text-center my-5 section-title">
     <h1 class="my-5 wow animate__fadeIn" data-wow-duration="1s">A LITTLE BIT ABOUT ME</h1>
   </div>
@@ -154,7 +144,7 @@
     <h5 class="container py-5 my-3 text-center wow animate__fadeIn" data-wow-duration="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quibusdam unde explicabo deserunt, cum consequuntur maxime et recusandae architecto accusantium dolores. Suscipit itaque consequuntur corrupti vel similique nisi aspernatur. Cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quibusdam unde explicabo deserunt.
     </h5>  
   </div>
-
+<!-- end fixed image  -->
     
     
   <!-- Start Cards -->
@@ -215,17 +205,17 @@
         <div class="col-lg-6">
           <div class="info">
             <div class="address">
-              <h4 class="mt-5"><i class="icofont-location-pin"></i></h4>
+              <h4 class="mt-5"><i class="fas fa-map-marker-alt"></i></h4>
               <h5>United Kingdom (UK)</h5>
             </div>
 
             <div class="email">
-              <h4><i class="icofont-email"></i></h4>
+              <h4> <i class="fas fa-envelope"></i> </h4>
               <h5>info@rngphotography.co.uk</h5>
             </div>
 
             <div class="phone">
-              <h4><i class="icofont-phone"></i></h4>
+              <h4> <i class="fas fa-phone"></i> </h4>
               <h5>+44 2345 9876</h5>
             </div>
 
