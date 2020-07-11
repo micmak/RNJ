@@ -25,7 +25,7 @@ SECRET_KEY = 'gp3io&f*#fin7db9*y4#t#=m9(as6b-tv)&(fmhy-8p2%^mj#z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
