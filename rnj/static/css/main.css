@@ -11037,6 +11037,16 @@ a.text-answer:hover, a.text-answer:focus {
   opacity: .6;
 }
 
+main.index .sunrise img {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+main.index .sunrise img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .marginTop {
   margin-top: 10%;
 }
@@ -11066,4 +11076,3 @@ a.text-answer:hover, a.text-answer:focus {
   top: -140px;
   z-index: 9999;
 }
-/*# sourceMappingURL=main.css.map */

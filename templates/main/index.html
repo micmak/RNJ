@@ -28,7 +28,7 @@
 {% endblock %}
 
 {% block content %}
-<main>
+<main class="index">
   <!-- start carousel  -->
   <div id="carouselControl" class="carousel slide" data-ride="carousel">
     <!-- <div class="caption mt-3">
@@ -203,30 +203,27 @@
     </div>
   </div>
 
-<!-- sunrise  -->
-
-<div class="container shadow marginTop">
-  <div class="row">
-
-    <div class="col-md-4 wow animate__fadeInLeft" data-wow-duration="1s">
-      <img src="{% static 'img/sun_01.jpg' %}">
-        </div>
-        <div class="col-md-4 wow animate__fadeIn" data-wow-duration="3s">
-          <img src="{% static 'img/sun_02.jpg' %}">
-            </div>
-            <div class="col-md-4 wow animate__fadeInRight" data-wow-duration="1s">
-              <img src="{% static 'img/sun_03.jpg' %}">
-                </div>
-        
-              </div>
-
-</div>
+  
+  <!-- sunrise  -->
+  <div class="sunrise container marginTop">
+    <div class="row">
+      <div class="col-md-4 wow animate__fadeInLeft" data-wow-duration="1s">
+        <img src="{% static 'img/sun_01.jpg' %}">
+      </div>
+      <div class="col-md-4 wow animate__fadeIn" data-wow-duration="3s">
+        <img src="{% static 'img/sun_02.jpg' %}">
+      </div>
+      <div class="col-md-4 wow animate__fadeInRight" data-wow-duration="1s">
+        <img src="{% static 'img/sun_03.jpg' %}">
+      </div>
+    </div>
+  </div>
 
   <!-- contact us  -->
-  <section id="contact" class="contact marginTop">
+  <section id="contact" class="contact marginTop bg-primary p-5">
     <div class="container" data-aos="fade-up">
 
-      <div class="section-title text-primary">
+      <div class="section-title">
         <h2 class="mt-lg-0">Contact Us</h2>
       </div>
       <div class="row">
@@ -251,8 +248,8 @@
           </div>
 
         </div>
-        <!-- contact us  -->
-
+        
+        <!-- contact us form -->
         <div class="col-lg-6 mt-lg-0">
           <form action="" method="post">
             <div class="form-row">
@@ -275,8 +272,9 @@
                 data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
             </div>
 
-            <div class="text-center"><button class="btn btn-primary wow animate__fadeInLeft" data-wow-duration="0.5s"
-                type="">Send Message</button></div>
+            <div class="text-center">
+              <button class="btn btn-dark wow animate__fadeInLeft" data-wow-duration="0.5s" type="submit">Send Message</button>
+            </div>
           </form>
 
         </div>
