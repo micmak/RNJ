@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container wow animate__fadeInLeft" data-wow-duration="1s">
+  <div class="row">
+<div class="col-lg-6 mt-5">
+  <p>Home/<strong class="text-primary">FAQs</strong></p>
+<h1 class="my-5">Your Question Answer</h1>
+<p>You can find answers to various questions from different categories on Answerbag You may ask questions on any topic but will need to register to do so. You can also browse through questions in selected categories of your choice and read all the questions and answers posted by other people.
+  
+</p>
+</div>
+<div class="col-lg-6 my-5" >
+<img src="img/faq.jpg" alt="" srcset="">
+</div>
+
+  </div>
+</div>
+
+<!-- Question and answer -->
+<div class="container wow animate__fadeIn" data-wow-duration="8s">
+  <div class="container my-5 info">
+    <h5>What does the word ‘cardboard’ denote in the poem? Why has this word been used?</h5>
+    <h3 class="border border-primary">The word cardboard denotes the photograph pasted on a hard thick paper. This word has been used to refer to a practice in the past when photographs were pasted on cardboard and framed with glass front to preserve them.</h3>
+</div>
+
+<div class="container my-5">
+  <h5>What has the camera captured?
+  </h5>
+<h3 class="border border-primary">The camera has captured the three girls—the poet’s mother and her two cousins, Betty and Dolly, in their swimming dresses with the poet’s mother in the middle and the two cousins on either side holding her hands and walking v feet in sea
+  water.</h3>
+</div>
+
+<div class="container my-5">
+  <h3>What has not changed over the years? Does this suggest something to you? </h3>
+<h5 class="border border-primary">The sea has not changed over the years. Its waves are as fresh, shining and tireless
+  as they were years ago. The changelessness of sea reminds us of the changes in human face with advancing age.</h5>
+</div>
+
+
+<div class="container my-5">
+
+  <h3>The poetess’s mother laughed at the snapshot? What did this laugh indicate? </h3>
+  <h5 class="text-answer ">Answer:</h5>
+<h5 class="border border-primary">This laugh’ indicated her joy at remembering an incident connected with her past
+  life, when she was quite young and free from the tensions and worries of life. </h5>
+</div>
+
+</div>
+<!-- contact us  -->
+<section id="contact" class="container contact marginTop">
+      <div class="col-lg-4 mx-auto my-5 text-center">
+<h1>Don't hesitate to ask any questions</h1>
+      </div>
+<div class="col-lg-6 mt-5 mt-lg-0 mx-auto ">
+        <form action="" method="post">
+          <div class="form-row">
+            <div class="col-md-6 form-group wow animate__fadeInLeft" data-wow-duration="1s">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="email" class="form-control wow animate__fadeInRight" data-wow-duration="1s" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control wow animate__fadeIn" data-wow-duration="1s" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="type your question here..."></textarea>
+          </div>
+
+          <div class="text-center"><button class="btn btn-primary wow animate__fadeInUp" data-wow-duration="1s" type="">Send</button></div>
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
+
+{% endblock %}

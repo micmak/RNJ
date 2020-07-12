@@ -1,0 +1,8 @@
+source venv/Scripts/activate
+python manage.py runserver
+Pull Changes
+git pull
+pushing changes
+git add .
+git commit -m "YOUR MESSAGE HERE"
+git push
