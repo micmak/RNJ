@@ -91,16 +91,6 @@ main.index {
 
 // socialIcons 
 
-main.index {
-
-  .bottom-right {
-
-    a.fab:hover {
-      color: red;
-      
-    }
-  }
-}
 
 
 .marginTop {
@@ -136,6 +126,9 @@ main.index {
   z-index: 9999;
 }
 
-.fab.bottom-right {
-color: palegreen;
+.soc {
+  color: rgb(151, 151, 151);
+  .soc:hover {
+    color: rgb(255, 255, 255);
+  }
 }

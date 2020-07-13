@@ -11054,10 +11054,6 @@ main.index .sunrise img:hover {
           transform: scale(1.05);
 }
 
-main.index .bottom-right a.fab:hover {
-  color: red;
-}
-
 .marginTop {
   margin-top: 10%;
 }
@@ -11088,7 +11084,11 @@ main.index .bottom-right a.fab:hover {
   z-index: 9999;
 }
 
-.fab.bottom-right {
-  color: palegreen;
+.soc {
+  color: #979797;
+}
+
+.soc .soc:hover {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
