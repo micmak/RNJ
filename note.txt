@@ -8,3 +8,9 @@ git commit -m "YOUR MESSAGE HERE"
 git push
 
 
+.soc {
+  color: rgb(151, 151, 151);
+}
+  .soc:hover {
+    color: rgb(255, 255, 255);
+  }

@@ -20,13 +20,6 @@ caption {
   width: 15rem;
 }
 
-div .fab {
-  background-color: red;
-  color: #9c9c9c;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-}
-
 .hoverable {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -11081,14 +11074,17 @@ main.index .sunrise img:hover {
 .bottom-right {
   position: relative;
   top: -140px;
+  line-height: 2;
   z-index: 9999;
 }
 
 .soc {
   color: #979797;
+  font-size: 25px;
+  line-height: 45px;
 }
 
-.soc .soc:hover {
+.soc:hover {
   color: white;
 }
 /*# sourceMappingURL=main.css.map */
