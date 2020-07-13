@@ -1,7 +1,7 @@
 
 $theme-colors: (
   "primary": #FFD43E,
-  "answer": #ff0000,
+  "social": #797979,
 );
 
 $marginTop: 10%;
@@ -10,8 +10,9 @@ img {
   max-width: 100%;
 }
 .carousel-caption {
-  padding-bottom: 150px !important;
+
   text-align: left !important;
+  margin-bottom: 10.5rem;
 }
 
 caption {
@@ -26,7 +27,12 @@ caption {
 .logo {
   width: 15rem;
 }
+div .fab {
+  background-color: rgb(255, 0, 0);
+  color: rgb(156, 156, 156);
+  transition-duration: 0.2s;
 
+}
 
 .hoverable {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -83,6 +89,19 @@ main.index {
   }
 }
 
+// socialIcons 
+
+main.index {
+
+  .bottom-right {
+
+    a.fab:hover {
+      color: red;
+      
+    }
+  }
+}
+
 
 .marginTop {
   margin-top: $marginTop;
@@ -115,5 +134,8 @@ main.index {
   position: relative;
   top: -140px;
   z-index: 9999;
+}
 
+.fab.bottom-right {
+color: palegreen;
 }
