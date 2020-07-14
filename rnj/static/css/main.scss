@@ -8,10 +8,19 @@ $marginTop: 10%;
 img {
   max-width: 100%;
 }
+.michael {
+  position: relative;
+  text-align: center;
+}
 .carousel-caption {
 
   text-align: left !important;
   margin-bottom: 10.5rem;
+}
+.price-caption {
+
+  text-align: left !important;
+  margin-bottom: 5.5rem;
 }
 
 caption {
@@ -34,7 +43,9 @@ caption {
 
 @import "src/bootstrap-4.5.0/scss/bootstrap";
 
-
+// pricing page
+  
+      
 // carousel
 #carouselControl {
   .carousel-inner {
