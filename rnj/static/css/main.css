@@ -11090,7 +11090,15 @@ main.index .sunrise img:hover {
   line-height: 45px;
 }
 
-.soc:hover {
+.soc .soc:hover {
   color: white;
+}
+
+#list {
+  background-color: #a2d8a2 !important;
+}
+
+#list #list:hover {
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */
