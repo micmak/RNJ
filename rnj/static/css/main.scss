@@ -128,17 +128,26 @@ main.index {
 
 
 .soc {
-  color: rgb(151, 151, 151);
+  color: rgb(161, 161, 161);
   font-size: 25px;
-  line-height: 45px;
+  line-height: 30px;
   .soc:hover {
     color: rgb(255, 255, 255);
+
   }
 }
 
-// #list {
-//   background-color: rgb(162, 216, 162) !important;
-//   #list:hover {
-//     color: rgb(255, 0, 0);
-//   }
-// }
+
+.offer {
+  max-width: 450px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #FFD43E, #797979);
+  padding: 3px;
+}
+
+.module {
+  background: #222;
+  color: white;
+  padding: 2rem;
+}

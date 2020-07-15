@@ -11085,12 +11085,27 @@ main.index .sunrise img:hover {
 }
 
 .soc {
-  color: #979797;
+  color: #a1a1a1;
   font-size: 25px;
-  line-height: 45px;
+  line-height: 30px;
 }
 
 .soc .soc:hover {
   color: white;
+}
+
+.offer {
+  max-width: 450px;
+  padding: 1rem;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#FFD43E), to(#797979));
+  background: linear-gradient(to right, #FFD43E, #797979);
+  padding: 3px;
+}
+
+.module {
+  background: #222;
+  color: white;
+  padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
