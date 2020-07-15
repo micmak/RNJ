@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="contact">
+
+  <!-- contact us  -->
+  <section id="contact" class="contact marginTop bg-primary p-5">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2 class="mt-lg-0">Contact Us</h2>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="info">
+            <div class="address">
+              <h4 class="mt-5"><i class="fas fa-map-marker-alt"></i></h4>
+              <h5>United Kingdom (UK)</h5>
+            </div>
+
+            <div class="email">
+              <h4> <i class="fas fa-envelope"></i> </h4>
+              <h5>info@rngphotography.co.uk</h5>
+            </div>
+
+            <div class="phone">
+              <h4> <i class="fas fa-phone"></i> </h4>
+              <h5>+44 2345 9876</h5>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- contact us form -->
+        <div class="col-lg-6 mt-lg-0">
+          <form action="" method="post">
+            <div class="form-row">
+              <div class="col-md-6 form-group wow animate__fadeInLeft" data-wow-duration="0.5s">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control wow animate__fadeInRight" data-wow-duration="0.5s" name="email"
+                  id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" name="subject"
+                id="subject" placeholder="Subject" data-rule="minlen:4"
+                data-msg="Please enter at least 8 chars of subject" />
+            </div>
+            <div class="form-group">
+              <textarea class="form-control wow animate__fadeInUp" data-wow-duration="0.5s" name="message" rows="5"
+                data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            </div>
+
+            <div class="text-center">
+              <button class="btn btn-dark wow animate__fadeInLeft" data-wow-duration="0.5s" type="submit">Send
+                Message</button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  
+</main>
+
+{% endblock %}
+
+{% block js %}
+<!-- Animation style  -->
+<script src="WOW-master/dist/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+{% endblock %}
