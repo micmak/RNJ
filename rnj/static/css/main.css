@@ -11093,12 +11093,4 @@ main.index .sunrise img:hover {
 .soc .soc:hover {
   color: white;
 }
-
-#list {
-  background-color: #a2d8a2 !important;
-}
-
-#list #list:hover {
-  color: red;
-}
 /*# sourceMappingURL=main.css.map */
