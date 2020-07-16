@@ -11063,6 +11063,15 @@ main.index .sunrise img:hover {
           transform: scale(1.05);
 }
 
+.contactImg {
+  background-color: yellow;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .marginTop {
   margin-top: 10%;
 }
@@ -11105,7 +11114,6 @@ main.index .sunrise img:hover {
 }
 
 .offer {
-  max-width: 450px;
   padding: 1rem;
   position: relative;
   background: -webkit-gradient(linear, left top, right top, from(#FFD43E), to(#797979));

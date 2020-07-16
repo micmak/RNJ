@@ -103,6 +103,15 @@ main.index {
   }
 }
 
+  .contactImg {
+    background-color:yellow ;
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 
 .marginTop {
   margin-top: $marginTop;
@@ -152,7 +161,6 @@ main.index {
 
 
 .offer {
-  max-width: 450px;
   padding: 1rem;
   position: relative;
   background: linear-gradient(to right, #FFD43E, #797979);
