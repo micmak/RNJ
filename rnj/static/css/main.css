@@ -11043,6 +11043,13 @@ a.text-social:hover, a.text-social:focus {
   opacity: .6;
 }
 
+.price .mmnwmm {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: .6;
+}
+
 main.index .sunrise img {
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
