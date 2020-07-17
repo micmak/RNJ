@@ -163,7 +163,7 @@ main.index {
   font-size: 25px;
   line-height: 30px;
   .soc:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 
   }
 }
@@ -172,12 +172,12 @@ main.index {
 .offer {
   padding: 1rem;
   position: relative;
-  background: linear-gradient(to right, #FFD43E, #797979);
+  background: linear-gradient(to right, #FFD43E, #ff0000);
   padding: 3px;
 }
 
 .module {
-  background: #222;
-  color: white;
+  background: rgb(255, 254, 254);
+  color: rgb(0, 0, 0);
   padding: 2rem;
 }

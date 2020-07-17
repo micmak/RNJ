@@ -11117,20 +11117,20 @@ main.index .sunrise img:hover {
 }
 
 .soc .soc:hover {
-  color: white;
+  color: black;
 }
 
 .offer {
   padding: 1rem;
   position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(#FFD43E), to(#797979));
-  background: linear-gradient(to right, #FFD43E, #797979);
+  background: -webkit-gradient(linear, left top, right top, from(#FFD43E), to(#ff0000));
+  background: linear-gradient(to right, #FFD43E, #ff0000);
   padding: 3px;
 }
 
 .module {
-  background: #222;
-  color: white;
+  background: #fffefe;
+  color: black;
   padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
