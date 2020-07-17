@@ -84,8 +84,17 @@ caption {
 // Index - TODO - fill it in here mikky
 main.index {
 
-  .sunrise {
+  .soc {
+    color: rgb(161, 161, 161);
+    font-size: 25px;
+    line-height: 30px;
+    .soc:hover {
+      color: rgb(0, 0, 0);
+  
+    }
+  }
 
+  .sunrise {
     img {
       transition: all 0.6s ease-in-out;;
 
@@ -156,15 +165,7 @@ main.index {
 }
 
 
-.soc {
-  color: rgb(161, 161, 161);
-  font-size: 25px;
-  line-height: 30px;
-  .soc:hover {
-    color: rgb(0, 0, 0);
 
-  }
-}
 
 
 .offer {
