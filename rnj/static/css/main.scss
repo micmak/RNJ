@@ -1,172 +1,155 @@
 $theme-colors: (
-  "primary": #FFD43E,
+  "primary": #FFC700,
   "social": #797979,
 );
 
 $marginTop: 10%;
 
-img {
-  max-width: 100%;
-}
-.michael {
-  position: relative;
-  text-align: center;
-}
-.carousel-caption {
-
-  text-align: left !important;
-  margin-bottom: 10.5rem;
-}
-.price-caption {
-
-  text-align: left !important;
-  margin-bottom: 5.5rem;
-}
-
-caption {
-  padding-bottom: 10px !important;
-  text-align: right !important;
-}
-
 .logo {
-  width: 15rem;
+  width: 10rem;
 }
-
-.hoverable {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-  transition-duration: 0.2s;
-  &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
-  }
-}
-
 
 @import "src/bootstrap-4.5.0/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
 
-// pricing page
-  
-      
-// carousel
-#carouselControl {
-  .carousel-inner {
-    .carousel-img {
-      height: 90vh;
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: cover; /* Resize the background image to cover the entire container */
 
-      &::after {
-        content: ""; // ::before and ::after both require content
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        // background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-        background: #000;
-        opacity: .6;
-      }
+// General
+body {
+  font-family: 'Nunito', sans-serif;
+
+  img {
+    max-width: 100%;
+  }
+
+  .hoverable {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    transition-duration: 0.2s;
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
     }
-    
+  }
+
+  
+  .underline-primary {
+    position: relative;
+    display: inline;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #fffb00;
+      bottom: 0;
+      left: 0;
+      // left: calc(10% - 20px);
+    }
   }
 }
 
 
+// Index page
+main.index {
+  // carousel
+  #carouselControl {
+    .carousel-inner {
+      .carousel-img {
+        height: 90vh;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+  
+        &::after {
+          content: ""; // ::before and ::after both require content
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          // background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+          background: #000;
+          opacity: .7;
+        }
+      }
+    }
+
+
+    
+    .hero {
+      max-width: 33rem;
+      position: absolute;
+      top: 30vh;
+      left: 15%;
+    }
+
+
+    .social-container {
+      width: 2rem;
+      position: absolute;
+      top: 65vh;
+      right: 2rem;
+      z-index: 100;
+      
+      .social {
+        color: #fff;
+        opacity: 0.5;
+        transition-duration: 0.5s;
+        display: block;
+        height: 3rem !important;
+        
+        &:hover {
+          opacity: 1 !important;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .sunrise {
+    img {
+      transition: all 0.6s ease-in-out;;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+// Contact page
+main.contact {
+
+  .sunrise {
+    img {
+      transition: all 0.6s ease-in-out;;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+// Pricing page
+main.pricing {
+  // TODO - change class name
   .mmnwmm {
     margin: 30px;
     background-color: #000000;
     opacity: .6;
     color: white;
   }
-
-  
-
-// Index - TODO - fill it in here mikky
-main.index {
-
-  .soc {
-    color: rgb(161, 161, 161);
-    font-size: 25px;
-    line-height: 30px;
-    .soc:hover {
-      color: rgb(0, 0, 0);
-  
-    }
-  }
-
-  .sunrise {
-    img {
-      transition: all 0.6s ease-in-out;;
-
-      &:hover {
-        transform: scale(1.05);
-      }
-    }
-  }
 }
 
-.contact {
 
-  .sunrise {
 
-    img {
-      transition: all 0.6s ease-in-out;;
 
-      &:hover {
-        transform: scale(1.05);
-      }
-    }
-  }
-}
-
-  .contactImg {
-    background-color:yellow ;
-    min-height: 500px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
 
 .marginTop {
   margin-top: $marginTop;
 }
-
-
-.section-title h1::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: #fffb00;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
-
-
-
-.parallax {
-  background-image: url("3.jpg");
-  min-height: 500px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-.bottom-right {
-  position: relative;
-  top: -140px;
-  line-height: 2;
-  z-index: 9999;
-}
-
-
-
-
 
 .offer {
   padding: 1rem;
