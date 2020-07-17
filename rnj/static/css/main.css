@@ -11023,6 +11023,11 @@ body .underline-primary::after {
   left: 0;
 }
 
+body .vertical-line {
+  border-left: 4px solid green;
+  height: 30px;
+}
+
 main.index #carouselControl .carousel-inner .carousel-img {
   height: 90vh;
   background-position: center;
@@ -11117,3 +11122,4 @@ main.pricing .mmnwmm {
   color: black;
   padding: 2rem;
 }
+/*# sourceMappingURL=main.css.map */
