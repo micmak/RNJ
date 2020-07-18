@@ -4,6 +4,12 @@ $theme-colors: (
 );
 
 $marginTop: 8%;
+.marginTop {
+  margin-top: $marginTop;
+}
+
+
+// text on image 
 .on-img {
   position: relative;
   top: -20rem;
@@ -20,6 +26,8 @@ $marginTop: 8%;
 
   display: block;
 }
+
+// social footer 
 
 .social-container1 {
   width: 6rem;
@@ -172,8 +180,7 @@ main.contact {
 
 // Pricing page
 main.pricing {
-  // TODO - change class name
-  .mmnwmm {
+  .pricing-card {
     margin: 30px;
     background-color: #000000;
     opacity: .6;
@@ -181,24 +188,14 @@ main.pricing {
   }
 }
 
-
-
-
-
-
-.marginTop {
-  margin-top: $marginTop;
-}
-
-.offer {
+.pricing-border {
+  .module {
+    background: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+  }
   padding: 1rem;
   position: relative;
   background: linear-gradient(to right, #FFD43E, #ff0000);
   padding: 3px;
-}
-
-.module {
-  background: rgb(255, 254, 254);
-  color: rgb(0, 0, 0);
-  padding: 2rem;
 }

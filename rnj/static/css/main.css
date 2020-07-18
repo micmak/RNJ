@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
+.marginTop {
+  margin-top: 8%;
+}
+
 .on-img {
   position: relative;
   top: -20rem;
@@ -11132,18 +11136,14 @@ main.contact .sunrise img:hover {
           transform: scale(1.05);
 }
 
-main.pricing .mmnwmm {
+main.pricing .pricing-card {
   margin: 30px;
   background-color: #000000;
   opacity: .6;
   color: white;
 }
 
-.marginTop {
-  margin-top: 8%;
-}
-
-.offer {
+.pricing-border {
   padding: 1rem;
   position: relative;
   background: -webkit-gradient(linear, left top, right top, from(#FFD43E), to(#ff0000));
@@ -11151,7 +11151,7 @@ main.pricing .mmnwmm {
   padding: 3px;
 }
 
-.module {
+.pricing-border .module {
   background: #fffefe;
   color: black;
   padding: 2rem;
