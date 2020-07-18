@@ -2,123 +2,60 @@
 {% load static %}
 
 {% block content %}
-<main class="faq">
+<main class="regestration">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 mt-5 wow animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="my-5">Your Question Answer</h2>
-        <p>You can find answers to various questions from different categories 
-          You may ask questions on any topic. <br>You can find answers to various questions from different categories 
-            You may ask questions on any topic.
-        </p>
-      </div>
-      <div class="col-lg-6 my-5 w-100">
-        <img class="border border-dark wow animate__fadeInUp" data-wow-duration="1s" src="{% static 'img/faq.jpg' %}">
-      </div>
+  <div class="">
+    <div class=" text-center">
+  <img src="{% static 'img/reg.jpg' %}" class="wow animate__fadeIn" data-wow-duration="1s">
 
+
+<div class="margitTop mt-5">
+  <h1 class="underline-primary   wow animate__fadeIn" data-wow-duration="5s">Resgestration</h1>
+
+</div>
     </div>
-  </div>
+    <div class="col-lg-6 mx-auto mt-5 wow animate__fadeInUp" data-wow-duration="1s">
 
-  <!-- Question and answer -->
-  <div class="container wow animate__fadeIn" data-wow-duration="3s">
-    <div class="row info">
-      <div class="col-md-6">
-
-        <h4 class="my-5 mx-5">Do you retouch all the photos?</h4>
-        <h5 class="mx-5 text-black-50">Of course, I do, every photo I take is retouched to the same standard and quality as shown on my website, if not better.</h5>
-      </div>
-
-      <div class="col-md-6">
-        <h4 class="my-5  mx-5">Do you do any formal group photos?</h4>
-        <h5 class="mx-5 text-black-50">I am always ready to do formal group photos, so long as the list is provided, this is because this makes it a lot easier and quicker as it is better than calling out names and being unorganised.</h5>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="container wow animate__fadeIn" data-wow-duration="3s">
-    <div class="row my-5 info">
-      <div class="col-md-6">
-
-        <h4 class="my-5  mx-5">How many photos are changed to black and white?</h4>
-        <h5 class="mx-5 text-black-50">Every wedding is different and what people prefer is different, it is up to you. However, some photos simply do not work well in colour.</h5>
-      </div>
-
-      <div class="col-md-6">
-        <h4 class="my-5  mx-5">Can we print the photos ourselves?</h4>
-        <h5 class="mx-5 text-black-50">Yes, as much as you like, I will send high resolution and professionally edited photos to you, so long as it is not watermarked, feel free to print as many photos as you like.</h5>
-
-      </div>
-    </div>
-  </div>
-  <div class="container wow animate__fadeIn" data-wow-duration="3s">
-    <div class="row my-5 info">
-      <div class="col-md-6">
-
-        <h4 class="my-5  mx-5">How are the photos delivered?</h4>
-        <h5 class="mx-5 text-black-50">Photos are delivered via a USB and an online, password protected, viewing gallery for family and friends.</h5>
-      </div>
-
-      <div class="col-md-6">
-        <h4 class="my-5  mx-5">How long will I have to wait for my photographs?</h4>
-        <h5 class="mx-5 text-black-50">It will take 4 weeks for your complete gallery, however this maybe before or after that. </h5>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="container wow animate__fadeIn" data-wow-duration="3s">
-    <div class="row my-5 info">
-      <div class="col-md-6">
-
-        <h4 class="my-5  mx-5">Are you insured? </h4>
-        <h5 class="mx-5 text-black-50">Yes of course I am, I have professional insurance for all my equipment I use.</h5>
-      </div>
-
-      <div class="col-md-6">
-        <h4 class="my-5 mx-5">Do you take portraits of bride and groom?</h4>
-        <h5 class="mx-5 text-black-50">Yes, I keep my portrait sessions relaxed, informal and fun. I don’t ask you to do anything like smiling or posing.</h5>
-
-      </div>
-    </div>
-  </div>
-
-
-  <!-- contact us  -->
-  <section id="contact" class="container contact marginTop">
-    <div class="col-lg-4 mx-auto my-5 text-center">
-      <h1>Don't hesitate to ask any questions</h1>
-    </div>
-    <div class="col-lg-6 mt-5 mt-lg-0 mx-auto ">
       <form action="" method="post">
         <div class="form-row">
-          <div class="col-md-6 form-group wow animate__fadeInLeft" data-wow-duration="1s">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-              data-msg="Please enter at least 4 chars" />
+          <div class="form-group col-md-6 mt-3">
+            <input type="text" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" name="Name"
+              id="subject" placeholder="Name" data-rule="minlen:9"
+              data-msg="Please enter at least 8 chars of Name" />
           </div>
-          <div class="col-md-6 form-group">
-            <input type="email" class="form-control wow animate__fadeInRight" data-wow-duration="1s" name="email"
-              id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+
+          <div class="form-group col-md-6 mt-3">
+            <input type="date" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" name="Date"
+              id="subject" placeholder="Username" data-rule="minlen:9"
+              data-msg="Please enter at least 8 chars of Username" />
           </div>
+
+          <div class="form-group col-md-6 mt-3">
+            <input type="text" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" name="Username"
+              id="subject" placeholder="Username" data-rule="minlen:9"
+              data-msg="Please enter at least 8 chars of Username" />
+          </div>
+
+          <div class="form-group col-md-6 mt-3">
+            <input type="text" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" name="Password"
+              id="subject" placeholder="Password" data-rule="minlen:4"
+              data-msg="Please enter at least 8 chars of Password" />
+          </div>
+          <div class="form-group col-md-12">
+            <textarea class="form-control wow animate__fadeInUp" data-wow-duration="0.5s" name="message" rows="3"
+              data-rule="required" data-msg="Please write something for us" placeholder="Note"></textarea>
+          </div>
+
         </div>
 
-        <div class="form-group">
-          <textarea class="form-control wow animate__fadeIn" data-wow-duration="1s" name="message" rows="5"
-            data-rule="required" data-msg="Please write something for us"
-            placeholder="type your question here..."></textarea>
-        </div>
-
-        <div class="text-center"><button class="btn btn-primary wow animate__fadeInUp" data-wow-duration="1s"
-            type="">Send</button></div>
+        <div class="text-center py-5"><button class="btn btn-primary wow animate__fadeInUp float-left"
+            data-wow-duration="1s" type="">Signup</button></div>
       </form>
-
     </div>
 
-    </div>
 
-    </div>
-  </section><!-- End Contact Section -->
+
+  </div>
 
 </main>
 

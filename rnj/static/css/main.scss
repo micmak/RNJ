@@ -6,8 +6,12 @@ $theme-colors: (
 $marginTop: 8%;
 .on-img {
   position: relative;
-  top: 1rem;
+  top: -20rem;
+  background-color: black;
+  opacity: .7;
+  color: white;
 }
+
 .logo {
   width: 10rem;
 }

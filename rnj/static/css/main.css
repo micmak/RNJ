@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
 .on-img {
   position: relative;
-  top: 1rem;
+  top: -20rem;
+  background-color: black;
+  opacity: .7;
+  color: white;
 }
 
 .logo {
