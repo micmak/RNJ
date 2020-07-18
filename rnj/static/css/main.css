@@ -1,6 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
+.on-img {
+  position: relative;
+  top: 1rem;
+}
+
 .logo {
   width: 10rem;
+}
+
+.input-group {
+  display: block;
+}
+
+.social-container1 {
+  width: 6rem;
+  position: relative;
+  top: 3vh;
+  z-index: 100;
+}
+
+.social-container1 .social-footer {
+  color: #fff;
+  opacity: 0.5;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  height: 1rem !important;
+  margin-left: 1rem;
+  display: unset;
+}
+
+.social-container1 .social-footer:hover {
+  opacity: 1 !important;
+  font-size: 1.4rem;
 }
 
 /*!
@@ -11106,7 +11137,7 @@ main.pricing .mmnwmm {
 }
 
 .marginTop {
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 .offer {
