@@ -12,7 +12,7 @@
 }
 
 .logo {
-  width: 10rem;
+  width: 12rem;
 }
 
 .input-group {
@@ -11062,11 +11062,16 @@ body .underline-primary::after {
 }
 
 body .vertical-line {
+  left: 19px;
   border-left: 4px solid green;
-  height: 30px;
+  height: 15px;
 }
 
-main.index #carouselControl .carousel-inner .carousel-img {
+body .block1 {
+  display: block;
+}
+
+body main.index #carouselControl .carousel-inner .carousel-img {
   height: 90vh;
   background-position: center;
   /* Center the image */
@@ -11076,7 +11081,7 @@ main.index #carouselControl .carousel-inner .carousel-img {
   /* Resize the background image to cover the entire container */
 }
 
-main.index #carouselControl .carousel-inner .carousel-img::after {
+body main.index #carouselControl .carousel-inner .carousel-img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -11087,14 +11092,14 @@ main.index #carouselControl .carousel-inner .carousel-img::after {
   opacity: .7;
 }
 
-main.index #carouselControl .hero {
+body main.index #carouselControl .hero {
   max-width: 33rem;
   position: absolute;
   top: 30vh;
   left: 15%;
 }
 
-main.index #carouselControl .social-container {
+body main.index #carouselControl .social-container {
   width: 2rem;
   position: absolute;
   top: 65vh;
@@ -11102,7 +11107,7 @@ main.index #carouselControl .social-container {
   z-index: 100;
 }
 
-main.index #carouselControl .social-container .social {
+body main.index #carouselControl .social-container .social {
   color: #fff;
   opacity: 0.5;
   -webkit-transition-duration: 0.5s;
@@ -11111,39 +11116,39 @@ main.index #carouselControl .social-container .social {
   height: 3rem !important;
 }
 
-main.index #carouselControl .social-container .social:hover {
+body main.index #carouselControl .social-container .social:hover {
   opacity: 1 !important;
   font-size: 1.4rem;
 }
 
-main.index .sunrise img {
+body main.index .sunrise img {
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
 
-main.index .sunrise img:hover {
+body main.index .sunrise img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-main.contact .sunrise img {
+body main.contact .sunrise img {
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
 
-main.contact .sunrise img:hover {
+body main.contact .sunrise img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-main.pricing .pricing-card {
+body main.pricing .pricing-card {
   margin: 30px;
   background-color: #000000;
   opacity: .6;
   color: white;
 }
 
-.pricing-border {
+body .pricing-border {
   padding: 1rem;
   position: relative;
   background: -webkit-gradient(linear, left top, right top, from(#FFD43E), to(#ff0000));
@@ -11151,7 +11156,7 @@ main.pricing .pricing-card {
   padding: 3px;
 }
 
-.pricing-border .module {
+body .pricing-border .module {
   background: #fffefe;
   color: black;
   padding: 2rem;

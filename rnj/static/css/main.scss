@@ -18,8 +18,11 @@ $marginTop: 8%;
   color: white;
 }
 
+
+
+
 .logo {
-  width: 10rem;
+  width: 12rem;
 }
 
 .input-group {
@@ -89,10 +92,14 @@ body {
   }
   // vertical-line 
   .vertical-line {
+    left: 19px;
     border-left: 4px solid green;
-    height: 30px;
+    height: 15px;
   }
   
+// block 
+.block1{
+display: block;
 }
 
 
@@ -198,4 +205,5 @@ main.pricing {
   position: relative;
   background: linear-gradient(to right, #FFD43E, #ff0000);
   padding: 3px;
+}
 }
