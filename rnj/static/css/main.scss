@@ -1,5 +1,5 @@
 $theme-colors: (
-  "primary": #FFC700,
+  "primary": #ffc700,
   "social": #797979,
 );
 
@@ -8,32 +8,47 @@ $marginTop: 8%;
   margin-top: $marginTop;
 }
 
-
-// text on image 
-.on-img {
-  position: relative;
-  top: -20rem;
+// text on image index
+.on-img1 {
   background-color: black;
-  opacity: .3;
+  opacity: 0.4;
   color: white;
+
+  position: relative;
+  transform: translate(0%, -100%);
+}
+// text on image pricing
+.on-img2 {
+  background-color: black;
+  opacity: 0.4;
+  color: white;
+  position: relative;
+  transform: translate(0%, -400%);
 }
 
-
-
+.parallax {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
 .logo {
   width: 12rem;
 }
 
-
-// social footer 
+// social footer
 
 .social-container1 {
   width: 6rem;
   position: relative;
   top: 3vh;
   z-index: 100;
-  
+
   .social-footer {
     color: #fff;
     opacity: 0.5;
@@ -41,7 +56,6 @@ $marginTop: 8%;
     margin-left: 1rem;
     display: unset;
 
-    
     &:hover {
       opacity: 1 !important;
       font-size: 1.4rem;
@@ -49,32 +63,30 @@ $marginTop: 8%;
   }
 }
 @import "src/bootstrap-4.5.0/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
 
 // General
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 
   img {
     max-width: 100%;
   }
 
   .hoverable {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     transition-duration: 0.2s;
     &:hover {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
   }
 
-  
   .underline-primary {
     position: relative;
     display: inline;
-  
+
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       width: 60px;
@@ -85,120 +97,123 @@ body {
       // left: calc(10% - 20px);
     }
   }
-  // vertical-line 
+  // vertical-line
   .vertical-line {
     left: 19px;
-    border-left: 4px solid #000000;
+    border-left: 4px solid #490808;
     height: 15px;
   }
-  
-// block 
-.block1{
-display: block;
-}
 
+  // block
+  .block1 {
+    display: block;
+  }
 
-// Index page
-main.index {
-  // carousel
-  #carouselControl {
-    .carousel-inner {
-      .carousel-img {
-        height: 90vh;
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
-  
-        &::after {
-          content: ""; // ::before and ::after both require content
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          // background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-          background: #000;
-          opacity: .7;
+  // Index page
+  main.index {
+    // carousel
+    #carouselControl {
+      .carousel-inner {
+        .carousel-img {
+          height: 90vh;
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+
+          &::after {
+            content: ""; // ::before and ::after both require content
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            // background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+            background: #000;
+            opacity: 0.7;
+          }
+        }
+      }
+
+      .hero {
+        max-width: 33rem;
+        position: absolute;
+        top: 30vh;
+        left: 15%;
+      }
+
+      .social-container {
+        width: 2rem;
+        position: absolute;
+        top: 65vh;
+        right: 2rem;
+        z-index: 100;
+
+        .social {
+          color: #fff;
+          opacity: 0.5;
+          transition-duration: 0.5s;
+          display: block;
+          height: 3rem !important;
+
+          &:hover {
+            opacity: 1 !important;
+            font-size: 1.4rem;
+          }
         }
       }
     }
 
+    .sunrise {
+      img {
+        transition: all 0.6s ease-in-out;
 
-    
-    .hero {
-      max-width: 33rem;
-      position: absolute;
-      top: 30vh;
-      left: 15%;
-    }
-
-
-    .social-container {
-      width: 2rem;
-      position: absolute;
-      top: 65vh;
-      right: 2rem;
-      z-index: 100;
-      
-      .social {
-        color: #fff;
-        opacity: 0.5;
-        transition-duration: 0.5s;
-        display: block;
-        height: 3rem !important;
-        
         &:hover {
-          opacity: 1 !important;
-          font-size: 1.4rem;
+          transform: scale(1.05);
         }
       }
     }
   }
 
-  .sunrise {
-    img {
-      transition: all 0.6s ease-in-out;;
+  // Contact page
+  main.contact {
+    .sunrise {
+      img {
+        transition: all 0.6s ease-in-out;
 
-      &:hover {
-        transform: scale(1.05);
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   }
-}
 
-// Contact page
-main.contact {
-
-  .sunrise {
-    img {
-      transition: all 0.6s ease-in-out;;
-
-      &:hover {
-        transform: scale(1.05);
-      }
+  // Pricing page
+  main.pricing {
+    .pricing-card {
+      margin: 30px;
+      background-color: #000000;
+      opacity: 0.6;
+      color: white;
     }
   }
-}
 
-// Pricing page
-main.pricing {
-  .pricing-card {
-    margin: 30px;
-    background-color: #000000;
-    opacity: .6;
-    color: white;
+  .pricing-border {
+    .module {
+      background: rgb(255, 254, 254);
+      color: rgb(0, 0, 0);
+      padding: 2rem;
+    }
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, #ffd43e, #ff0000);
+    padding: 3px;
   }
 }
 
-.pricing-border {
-  .module {
-    background: rgb(255, 254, 254);
-    color: rgb(0, 0, 0);
-    padding: 2rem;
+// carousel edit slogan and button
+@media (max-width: 967px) {
+  .hero1 {
+    font-size: 30px;
+    margin-top: 0;
   }
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(to right, #FFD43E, #ff0000);
-  padding: 3px;
-}
 }
