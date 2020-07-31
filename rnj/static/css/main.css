@@ -3,24 +3,6 @@
   margin-top: 8%;
 }
 
-.on-img1 {
-  background-color: black;
-  opacity: 0.4;
-  color: white;
-  position: relative;
-  -webkit-transform: translate(0%, -100%);
-          transform: translate(0%, -100%);
-}
-
-.on-img2 {
-  background-color: black;
-  opacity: 0.4;
-  color: white;
-  position: relative;
-  -webkit-transform: translate(0%, -400%);
-          transform: translate(0%, -400%);
-}
-
 .parallax {
   min-height: 500px;
   background-attachment: fixed;
@@ -11147,14 +11129,13 @@ body main.index .sunrise img:hover {
           transform: scale(1.05);
 }
 
-body main.contact .sunrise img {
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-}
-
-body main.contact .sunrise img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+body main.index .on-img1 {
+  background-color: black;
+  opacity: 0.4;
+  color: white;
+  position: relative;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
 }
 
 body main.pricing .pricing-card {
@@ -11164,7 +11145,7 @@ body main.pricing .pricing-card {
   color: white;
 }
 
-body .pricing-border {
+body main.pricing .pricing-border {
   padding: 1rem;
   position: relative;
   background: -webkit-gradient(linear, left top, right top, from(#ffd43e), to(#ff0000));
@@ -11172,7 +11153,7 @@ body .pricing-border {
   padding: 3px;
 }
 
-body .pricing-border .module {
+body main.pricing .pricing-border .module {
   background: #fffefe;
   color: black;
   padding: 2rem;
