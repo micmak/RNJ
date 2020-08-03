@@ -7,7 +7,10 @@ $marginTop: 8%;
 .marginTop {
   margin-top: $marginTop;
 }
+.contact {
 
+  overflow-x: hidden;
+}
 .parallax {
   min-height: 500px;
   background-attachment: fixed;
@@ -173,8 +176,8 @@ body {
     .pricing-card {
       margin: 30px;
       background-color: #000000;
-      opacity: 0.6;
-      color: white;
+      opacity: 0.3;
+      color: #ffffff;
     }
     .pricing-border {
       .module {

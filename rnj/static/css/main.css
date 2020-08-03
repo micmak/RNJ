@@ -3,6 +3,10 @@
   margin-top: 8%;
 }
 
+.contact {
+  overflow-x: hidden;
+}
+
 .parallax {
   min-height: 500px;
   background-attachment: fixed;
@@ -11142,8 +11146,8 @@ body main.index .on-img1 {
 body main.pricing .pricing-card {
   margin: 30px;
   background-color: #000000;
-  opacity: 0.6;
-  color: white;
+  opacity: 0.3;
+  color: #ffffff;
 }
 
 body main.pricing .pricing-border {
