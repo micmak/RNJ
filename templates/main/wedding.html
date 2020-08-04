@@ -6,7 +6,7 @@
 <!-- Start senconSection -->
 <main class="pricing container">
   <div class="">
-    <div class="text-center my-5 section-title">
+    <div class="text-center">
       <img src="{% static 'img/price.jpg' %}" class="imag wow animate__fadeIn" data-wow-duration="3s"
         alt="professional photographer">
 
@@ -17,8 +17,8 @@
         </div>
       </div>
 
-      <h1 class="my-5 wow animate__fadeIn" data-wow-duration="5s">EVERY COUPLE ARE SPECIAL, <br>SAME FOR THEIR WEDDING
-      </h1>
+      <h3 class="my-5 wow animate__fadeIn" data-wow-duration="5s">EVERY COUPLE ARE SPECIAL, <br>SAME FOR THEIR WEDDING
+      </h3>
 
     </div>
     <div>
@@ -43,11 +43,11 @@
   </div>
   <!-- End senconSection -->
   <!-- Start Cards -->
-  <div class="container marginTop">
+  <div class="container ">
     <div class="row ">
       <!-- first Card  -->
 
-      <div class="col-lg-4 box border-0">
+      <div class="col-lg-4 my-5 box border-0">
         <a href="#">
           <div class="card hoverable wow animate__rollIn" data-wow-offset="300" data-wow-duration="1s">
             <img src="{% static 'img/price2.jpg' %}" class="card-img-top border-0" alt="family portrait">
@@ -66,7 +66,7 @@
 
 
       <!-- second Card  -->
-      <div class="col-lg-4 box border-0">
+      <div class="col-lg-4 my-5 box border-0">
         <a href="#">
           <div class="card hoverable wow animate__rollIn" data-wow-offset="300" data-wow-duration="1s">
             <img src="{% static 'img/price3.jpg' %}" class="card-img-top border-0" alt="family photographer">
@@ -84,7 +84,7 @@
       </div>
 
       <!-- thirdCard  -->
-      <div class="col-lg-4 box border-0">
+      <div class="col-lg-4 my-5 box border-0">
         <a href="#">
           <div class="card hoverable wow animate__rollIn" data-wow-offset="300" data-wow-duration="1s">
             <img src="{% static 'img/price1.jpg' %}" class="card-img-top border-0" alt="local photographers">
@@ -198,6 +198,11 @@
       it is Monday-Thursday in which you have booked me.
     </div>
   </div>
+<!-- image  -->
+
+<div class="col-md-8 mx-auto marginTop">
+  <img src="{% static 'img/outdoor.jpg' %}" class="border-0 shadow" alt="local wedding photographers">
+</div>
 
   <!-- second border  -->
 
@@ -226,7 +231,7 @@
   <!-- new card  -->
   <div class=" marginTop">
     <div class="row ">
-      <div class="col-md-4 text-dark ">
+      <!-- <div class="col-md-4 text-dark ">
         <img src="{% static 'img/indoor.jpg' %}" class="card-img-top border-0 " alt="photoshoot">
 
         <div class="card-img-overlay pricing-card">
@@ -239,24 +244,24 @@
           • An online password protected viewing and sharing gallery for friends and family. <br>
           (Price will be reduced to £300 if added to a wedding package)
         </div>
-      </div>
+      </div> -->
       <!-- second card    -->
 
-      <div class="col-md-4 text-dark">
-        <img src="{% static 'img/engag.jpg' %}" class="card-img-top border-0" alt="local wedding photographers">
+      <div class="col-md-8 text-dark">
+        <img src="{% static 'img/engag.jpg' %}" class="border-0 shadow" alt="local wedding photographers">
+      </div>
 
-        <div class="card-img-overlay pricing-card">
+        <div class="col-md-4 my-5">
           <h3>ENGAGEMENT & COUPLES SHOOTS</h3>
-          <p class="card-text">An engagement or a couples shoot last about 2 hours, so we can have some time for a chat.
+          <h5 class="card-text">An engagement or a couples shoot last about 2 hours, so we can have some time for a chat.
             It is informal, fun, relaxed, a shoot of you both just being you and is a really great opportunity for us to
             get to know each other before your big day too. After the end of the session you don’t have to worry about
             which photos you will keep and which ones you want to let go. All the photos are included in the price and
-            are all ready for you to print and share with your lovely friends and family. </p>
-        </div>
+            are all ready for you to print and share with your lovely friends and family. </h5>
       </div>
 
       <!-- third caed  -->
-
+<!-- 
       <div class="col-md-4 ">
         <img src="{% static 'img/outdoor.jpg' %}" class="card-img-top border-0" alt="freelance photographer">
 
@@ -271,7 +276,7 @@
           (Price will be reduced to £200 if added to a wedding package)
 
         </div>
-      </div>
+      </div> -->
 
     </div>
   </div>
@@ -285,7 +290,12 @@
   <h4 class="py-3 text-center">such as petrol, and/or a 1-2-night stay at a local B&B or a hotel to the wedding venue.
   </h4>
   <h4 class="py-3 text-center text-muted">A 20% DEPOSIT IS DUE TO RESERVE YOUR SPECIAL DAY.</h4>
-</main>
+<!-- image  -->
+<img src="{% static 'img/wedding2.jpg' %}" class="border-0 shadow" alt="local wedding photographers">
+
+
+
+
 
 <!-- contact form  -->
 <!-- contact us form -->
@@ -325,6 +335,7 @@
   </form>
 
 </div>
+</main>
 
 
 <!-- end section about  -->
