@@ -23,9 +23,9 @@
 }
 
 .social-container1 {
-  width: 6rem;
   position: relative;
   top: 3vh;
+  left: -21px;
   z-index: 100;
 }
 
@@ -34,8 +34,8 @@
   opacity: 0.5;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  margin-left: 1rem;
-  display: unset;
+  display: inline;
+  margin-left: 10px;
 }
 
 .social-container1 .social-footer:hover {
@@ -11093,6 +11093,10 @@ body main.index #carouselControl .carousel-inner .carousel-img::after {
   height: 100%;
 }
 
+body main.index #carouselControl .carousel-indicators li {
+  width: 15px;
+}
+
 body main.index #carouselControl .hero {
   max-width: 33rem;
   position: absolute;
@@ -11134,11 +11138,11 @@ body main.index .sunrise img:hover {
 
 body main.index .on-img1 {
   background-color: black;
-  opacity: 0.4;
+  opacity: 0.5;
   color: white;
-  position: relative;
-  -webkit-transform: translate(0%, -100%);
-          transform: translate(0%, -100%);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40%;
 }
 
 body main.pricing .pricing-card {

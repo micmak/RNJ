@@ -29,18 +29,17 @@ $marginTop: 8%;
 // social footer
 
 .social-container1 {
-  width: 6rem;
   position: relative;
   top: 3vh;
+  left: -21px;
   z-index: 100;
 
   .social-footer {
     color: #fff;
     opacity: 0.5;
     transition-duration: 0.5s;
-    margin-left: 1rem;
-    display: unset;
-
+    display: inline;
+    margin-left: 10px;
     &:hover {
       opacity: 1 !important;
       font-size: 1.4rem;
@@ -120,7 +119,9 @@ body {
           }
         }
       }
-
+      .carousel-indicators li {
+        width: 15px;
+      }
       .hero {
         max-width: 33rem;
         position: absolute;
@@ -162,10 +163,11 @@ body {
     // text on image index
 .on-img1 {
   background-color: black;
-  opacity: 0.4;
+  opacity: 0.5;
   color: white;
-  position: relative;
-  transform: translate(0%, -100%);
+  position: sticky;
+  top: 40%;
+  // transform: translate(0px, -100px);
 }
 
   }
