@@ -11223,7 +11223,7 @@ body main.pricing .pricing-border .module {
 @media (max-width: 967px) {
   .caro {
     position: relative;
-    margin-left: -15%;
+    background-position: 88%;
   }
 }
 /*# sourceMappingURL=main.css.map */
