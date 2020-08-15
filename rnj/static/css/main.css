@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap");
 .marginTop {
-  margin-top: 8%;
+  margin-top: 5%;
 }
 
 .contact {
@@ -11077,6 +11077,10 @@ body .vertical-line {
 
 body .block1 {
   display: block;
+}
+
+body .dropdown-item.active, body .dropdown-item:active {
+  background-color: white;
 }
 
 body main.index #carouselControl .carousel-inner .carousel-img {
