@@ -8,7 +8,12 @@ urlpatterns = [
     path('faq', TemplateView.as_view(template_name='main/faq.html')),
     path('wedding', TemplateView.as_view(template_name='main/wedding.html')),
     path('contact', TemplateView.as_view(template_name='main/contact.html')),
-    path('pregnant', TemplateView.as_view(template_name='main/pregnant.html')),
+    path('maternity', TemplateView.as_view(template_name='main/maternity.html')),
+
+        path('newborn', TemplateView.as_view(template_name='main/newborn.html')),
+        path('children-family', TemplateView.as_view(template_name='main/children-family.html')),
+        path('cake-smash', TemplateView.as_view(template_name='main/cake-smash.html')),
+
     path('login', TemplateView.as_view(template_name='main/login.html')),
     path('regestration', TemplateView.as_view(template_name='main/regestration.html')),
 
