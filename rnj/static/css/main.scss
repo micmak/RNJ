@@ -3,7 +3,7 @@ $theme-colors: (
   "social": #797979,
 );
 
-$marginTop: 15%;
+$marginTop: 5%;
 .marginTop {
   margin-top: $marginTop;
 }
@@ -20,6 +20,10 @@ $marginTop: 15%;
   position: relative;
   text-align: center;
   color: white;
+}
+// Dropdown navbar 
+.dropdown-menu {
+  margin-left: 15px !important;
 }
 
 .logo {
