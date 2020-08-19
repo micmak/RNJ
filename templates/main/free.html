@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="pregnat">
+
+  <div class="container pre1 mt-5">
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="lolo wow animate__fadeInLeft" data-wow-duration="1s" src="{% static 'img/free.jpg' %}">
+      </div>
+            <div class="col-lg-7 mx-auto text-center my-4 wow animate__fadeInUp" data-wow-duration="1s">
+              <h3 class="">FREE PRE–WEDDING TRIAL SHOOT </h3>
+
+              <p class="text-justify mt-3">I feel that a pre-wedding shoot is essential for both the groom and bride, as well as for me as a photographer.
+                It usually if not always takes an hour. We start with a pre-wedding meeting, whether we get coffee, or even a
+                beer, we can informally discuss your big day plans and what you dream of on that day. Then we go off to take a
+                mini photo shoot at a location of your choice, parks and countryside’s are what I personally choose. We go for
+                thirty minutes to one hour and take pictures every now and then whilst discussing what you are looking for etc.
+                Once we are finished with the shoot and you realise it wasn’t as horrific as you thought it’d be, I will start
+                to work on your photos. In the next two days, I will email you all your photos that were taken, in colour and
+                black and white along with a watermark over the top of each image for you to review. By then, you will have an
+                idea if I am the right photographer for your special day or not. If you are happy and are ready to book with me,
+                I will ask for a 20% deposit and I will ask you to fill out a booking form online. Once everything has been
+                returned to me, I will resend the photos without a watermark on them. This service is completely free of charge
+                and you don’t have to book with me if you are not happy with the photos. You can simply walk off without any
+                commitment to me.</p>
+            </div>
+      
+    </div>
+  </div>
+
+  <!-- Third section -->
+
+  <div class="container my-5">
+    <div class="row">
+    <img class="col-lg-6 mb-5 my-5 wow animate__fadeInLeft" data-wow-duration="1s" src="{% static 'img/mat4.jpg' %}">
+    <img class="col-lg-6 mb-5 my-5 wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/mat5.jpg' %}">
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <img class="mb-5 my-5 wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/mat5.jpg' %}">
+    </div>
+    <div class="col-lg-4">
+      <img class="mb-5 my-5 wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/mat5.jpg' %}">
+    </div>
+    <div class="col-lg-4">
+      <img class="mb-5 my-5 wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/mat5.jpg' %}">
+    </div>
+  </div>
+</div>
+</main>
+
+{% endblock %}
+
+{% block js %}
+<!-- Animation style  -->
+<script src="WOW-master/dist/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+{% endblock %}

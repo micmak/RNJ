@@ -9,11 +9,15 @@ urlpatterns = [
     path('wedding', TemplateView.as_view(template_name='main/wedding.html')),
     path('contact', TemplateView.as_view(template_name='main/contact.html')),
     path('maternity', TemplateView.as_view(template_name='main/maternity.html')),
-
         path('newborn', TemplateView.as_view(template_name='main/newborn.html')),
         path('children-family', TemplateView.as_view(template_name='main/children-family.html')),
         path('cake-smash', TemplateView.as_view(template_name='main/cake-smash.html')),
+        path('free', TemplateView.as_view(template_name='main/free.html')),
+        path('black-white', TemplateView.as_view(template_name='main/black-white.html')),
+        path('headshot', TemplateView.as_view(template_name='main/headshot.html')),
 
+
+        
     path('login', TemplateView.as_view(template_name='main/login.html')),
     path('regestration', TemplateView.as_view(template_name='main/regestration.html')),
 
