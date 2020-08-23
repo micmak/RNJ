@@ -15,6 +15,7 @@ urlpatterns = [
         path('free', TemplateView.as_view(template_name='main/free.html')),
         path('black-white', TemplateView.as_view(template_name='main/black-white.html')),
         path('headshot', TemplateView.as_view(template_name='main/headshot.html')),
+        path('outdoor', TemplateView.as_view(template_name='main/outdoor.html')),
 
 
         
