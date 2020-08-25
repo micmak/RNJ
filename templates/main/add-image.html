@@ -5,18 +5,35 @@
 {% block content %}
 <main class="regestration">
 
-  <div class="">
     <div class=" text-center">
-  <img src="{% static 'img/reg.jpg' %}" class="wow animate__fadeIn" data-wow-duration="1s">
 
 
 <div class="margitTop mt-5">
-  <h1 class="underline-primary   wow animate__fadeIn" data-wow-duration="5s">Resgestration</h1>
+  <h1 class="underline-primary   wow animate__fadeIn" data-wow-duration="5s">Add Images</h1>
 
 </div>
     </div>
     <div class="col-lg-6 mx-auto mt-5 wow animate__fadeInUp" data-wow-duration="1s">
 
+<!-- list of clinet -->
+<form">
+  <label for="client">Client's Name</label>
+  <select name="client" id="cars">
+    <option value="name">Choose Client</option>
+    <option value="name">Jo</option>
+    <option value="name">Michael</option>
+    <option value="name">QWERTY</option>
+    <option value="name">ASDFGHJK</option>
+  </select>
+  <br><br>
+  <div>
+    <label for="myfile">Select files:</label>
+    <input type="file" id="img" name="img" multiple accept="image/*">
+  </div>
+    <input class="btn btn-primary mt-5 text-center" type="submit" value="Submit">
+</form>
+
+<!-- 
       <form action="" method="post">
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -56,7 +73,7 @@
 
 
 
-  </div>
+  </div> -->
 
 </main>
 

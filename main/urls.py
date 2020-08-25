@@ -17,5 +17,7 @@ urlpatterns = [
     path('headshot', TemplateView.as_view(template_name='main/headshot.html')),
     path('outdoor', TemplateView.as_view(template_name='main/outdoor.html')),
     path('gallery', TemplateView.as_view(template_name='main/gallery.html')),
+    path('add-image', TemplateView.as_view(template_name='main/add-image.html')),
+
 
 ]
