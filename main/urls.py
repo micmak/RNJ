@@ -1,6 +1,8 @@
 from django.urls import path
 from django.views.generic import TemplateView
 
+from .views import *
+
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name='main/index.html')),
@@ -17,7 +19,8 @@ urlpatterns = [
     path('headshot', TemplateView.as_view(template_name='main/headshot.html')),
     path('outdoor', TemplateView.as_view(template_name='main/outdoor.html')),
     path('gallery', TemplateView.as_view(template_name='main/gallery.html')),
-    path('add-image', TemplateView.as_view(template_name='main/add-image.html')),
 
-
+    
+    # path('add-image', TemplateView.as_view(template_name='main/add-image.html')),
+    path('add-image', UploadImages.as_view(), name='upload_images'),
 ]

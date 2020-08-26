@@ -1,80 +1,42 @@
-<title>Resgestration</title>
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}Upload Images{% endblock %}
+
 {% block content %}
-<main class="add-image">
+<main class="add-image container">
 
-    <div class=" text-center">
-
-
-<div class="margitTop mt-5">
-  <h1 class="underline-primary   wow animate__fadeIn" data-wow-duration="5s">Add Images</h1>
-
-</div>
-    </div>
-    <div class="col-lg-6 mx-auto mt-5 wow animate__fadeInUp" data-wow-duration="1s">
-
-<!-- list of clinet -->
-<form">
-  <label for="client">Client's Name</label>
-  <select name="client" id="cars">
-    <option value="name">Choose Client</option>
-    <option value="name">Jo</option>
-    <option value="name">Michael</option>
-    <option value="name">QWERTY</option>
-    <option value="name">ASDFGHJK</option>
-  </select>
-  <br><br>
-  <div>
-    <label for="myfile">Select files:</label>
-    <input type="file" id="img" name="img" multiple accept="image/*">
+  <div class="margitTop text-center mt-5">
+    <h1 class="underline-primary wow animate__fadeIn" data-wow-duration="5s">Add Images</h1>
   </div>
-    <input class="btn btn-primary mt-5 text-center" type="submit" value="Submit">
-</form>
 
-<!-- 
-      <form action="" method="post">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <input type="text" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" name="Name"
-              id="subject" placeholder="Name" data-rule="minlen:9"
-              data-msg="Please enter at least 8 chars of Name" />
-          </div>
+  <div class="mx-auto mt-5 wow animate__fadeInUp">
+    {% for message in messages %}
+      <div class="alert alert-{% if message.tags == 'success' %}success{% else %}danger{% endif %}" role="alert">
+        {{message}}
+      </div>
+    {% endfor %}
 
-          <div class="form-group col-md-6">
-            <input type="date" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" name="Date"
-              id="subject" placeholder="Username" data-rule="minlen:9"
-              data-msg="Please enter at least 8 chars of Username" />
-          </div>
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="form-group mb-5">
+        <label for="client">Client's Name</label>
+        <select class="form-control" name="client" id="client" required>
+          <option value="" selected disabled>Choose Client</option>
+          {% for user in users %}
+          <option value="{{user.username}}">{{user.username}}</option>
+          {% endfor %}
+        </select>
+      </div>
 
-          <div class="form-group col-md-6">
-            <input type="text" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" name="Username"
-              id="subject" placeholder="Username" data-rule="minlen:9"
-              data-msg="Please enter at least 8 chars of Username" />
-          </div>
+      <div class="form-group mb-5">
+        <label for="images">Select files:</label>
+        <input type="file" id="images" name="images" class="d-block" multiple accept="image/*" required>
+      </div>
 
-          <div class="form-group col-md-6">
-            <input type="text" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" name="Password"
-              id="subject" placeholder="Password" data-rule="minlen:4"
-              data-msg="Please enter at least 8 chars of Password" />
-          </div>
-          <div class="form-group col-md-12">
-            <textarea class="form-control wow animate__fadeInUp" data-wow-duration="0.5s" name="message" rows="3"
-              data-rule="required" data-msg="Please write something for us" placeholder="Note"></textarea>
-          </div>
-
-        </div>
-
-        <div class="text-center py-3 mb-5 "><button class="btn btn-primary wow animate__fadeInUp float-left"
-            data-wow-duration="1s" type="">Signup</button></div>
-      </form>
-    </div>
-
-
-
-  </div> -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 
 </main>
-
 {% endblock %}

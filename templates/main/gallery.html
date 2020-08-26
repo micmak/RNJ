@@ -1,56 +1,31 @@
 
-<title>Your Amazing Photo</title>
-
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}Your Amazing Photo{% endblock %}
+
+
 {% block content %}
+<main class="about container">
+  <div class="text-center my-5">
+    <h1 class="text-center underline-primary mt-5 wow animate__fadeIn" data-wow-duration="5s">
+      Wellcome ({{user}})
+    </h1>
+  </div>
+  <div class="lead wow animate__fadeIn" data-wow-duration="5s">
+    <p>We are so happy for you, First of all, I do hope you enjoyed</p>
+  </div>
 
-<!-- Start senconSection -->
-<main class="about">
-    <div class="container">
-      <div class="row">
-<div class="text-center my-5">
-  <h1 class="text-center underline-primary mt-5 wow animate__fadeIn" data-wow-duration="5s">Wellcome (Name)</h1>
-</div>
-<div class="container text-justify wow animate__fadeIn" data-wow-duration="5s">
-  <p>We are so happy for you, First of all, I do hope you enjoyed</p>
-</div>
+  <!-- new gallery  -->
+  <section class="row my-5">
+    {% for img in user.images.all %}
+    <div class="col-lg-3 pb-3">
+      <a href="{{img.image.url}}" data-lightbox="userImages">
+        <img class="wow animate__fadeInUp" data-wow-duration="0.7s" alt="userImage" src="{{img.image.url}}" />
+      </a>
     </div>
-  </div>
-  <!-- End senconSection -->
+    {% endfor %}
+  </section>
 
-<!-- new gallery  -->
-
-  <div class="container my-5">
-<div class="row">
-  <div class="col-lg-3">
-    <a class="example-image-link" href="{% static 'img/22.jpg' %}" data-lightbox="example-1"><img class="example-image wow animate__fadeInLeft" data-wow-duration="2s" alt="..." src="{% static 'img/22.jpg' %}" alt="image-1" /></a>
-  </div>
-  <div class="col-lg-3">
-    <a class="example-image-link" href="{% static 'img/22.jpg' %}" data-lightbox="example-1"><img class="example-image wow animate__fadeInLeft" data-wow-duration="2s" alt="..." src="{% static 'img/22.jpg' %}" alt="image-1" /></a>
-  </div>
-  <div class="col-lg-3">
-    <a class="example-image-link" href="{% static 'img/22.jpg' %}" data-lightbox="example-1"><img class="example-image wow animate__fadeInLeft" data-wow-duration="2s" alt="..." src="{% static 'img/22.jpg' %}" alt="image-1" /></a>
-  </div>
-  <div class="col-lg-3">
-    <a class="example-image-link" href="{% static 'img/22.jpg' %}" data-lightbox="example-1"><img class="example-image wow animate__fadeInLeft" data-wow-duration="2s" alt="..." src="{% static 'img/22.jpg' %}" alt="image-1" /></a>
-  </div>
-</div>
-  
-  
-  </div>
-
-
-
-
-    </main>
-
-    {% endblock %}
-
-{% block js %}
-<!-- Animation style  -->
-
-
-
+</main>
 {% endblock %}
