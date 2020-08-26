@@ -33,8 +33,6 @@
             <a class="nav-link {% if 'cake-smash' in request.path %}active{% endif %} dropdown-item" href="/black-white">Black & White</a>
             <a class="nav-link {% if 'headshot' in request.path %}active{% endif %} dropdown-item" href="/headshot">Portrait Headshot</a>
             <a class="nav-link {% if 'outdoor' in request.path %}active{% endif %} dropdown-item" href="/outdoor">Outdoor</a>
-
-            
           </div>
         </li>
         <li class="nav-item">
@@ -47,8 +45,19 @@
 
 
       {% if user.is_authenticated %}
-        <a class="btn btn-outline-dark  my-2 my-sm-0" href="{% url 'logout' %}">Logout</a>
-        <a class="nav-link {% if 'gallery' in request.path %}active{% endif %}" href="/gallery">My Images</a>
+      <a class="btn btn-outline-dark  my-2 my-sm-0" href="{% url 'logout' %} dropdown-item">Logout</a>
+
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Name
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+          <a class="nav-link {% if 'gallery' in request.path %}active{% endif %} dropdown-item" href="/gallery">My Images</a>
+          <a class="nav-link {% if 'add-image' in request.path %}active{% endif %} dropdown-item" href="/add-image">add-images</a>
+  
+        </div>
+      </div>
 
       {% else %}
         <a class="btn btn-dark text-primary my-2 my-sm-0" href="{% url 'login' %}">Login</a>
