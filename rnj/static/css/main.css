@@ -11186,6 +11186,10 @@ body main.pricing .pricing-border .module {
   }
 }
 
+.add-image {
+  min-height: 100%;
+}
+
 .loading-page {
   background: black;
   position: absolute;
