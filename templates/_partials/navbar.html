@@ -43,21 +43,34 @@
         </li>
       </ul>
 
-
+      
       {% if user.is_authenticated %}
-      <a class="btn btn-outline-dark  my-2 my-sm-0" href="{% url 'logout' %} dropdown-item">Logout</a>
 
-      <div class="nav-item dropdown">
+      <div class="btn-group">
+        <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Name
+        </button>
+        <div class="dropdown-menu">
+          <a class="nav-link text-dark" href="/gallery">My Images</a>
+          <a class="nav-link text-dark" href="/add-image">Add image</a>
+          <div class="dropdown-divider"></div>
+
+          <a class="btn btn-outline-dark  my-2 mx-2 my-sm-0" href="{% url 'logout' %} ">Logout</a>
+
+        </div>
+      </div>
+      
+      <!-- <div class="nav-item dropdown">
+       
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Name
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-          <a class="nav-link {% if 'gallery' in request.path %}active{% endif %} dropdown-item" href="/gallery">My Images</a>
+          
           <a class="nav-link {% if 'add-image' in request.path %}active{% endif %} dropdown-item" href="/add-image">add-images</a>
-  
+          
         </div>
-      </div>
+      </div> -->
 
       {% else %}
         <a class="btn btn-dark text-primary my-2 my-sm-0" href="{% url 'login' %}">Login</a>

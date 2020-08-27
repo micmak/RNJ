@@ -28,13 +28,19 @@
           {% endfor %}
         </select>
       </div>
-
+<!-- 
       <div class="form-group mb-5">
         <label for="images">Select files:</label>
         <input type="file" id="images" name="images" class="d-block" multiple accept="image/*" required>
-      </div>
+      </div> -->
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+  <!-- Change /upload-target to your upload address -->
+  <label for="images">Select Images:</label>
+  <div action="/upload-target"type="file" id="images" name="images" class="dropzone">
+</div>
+  
+  
+      <button type="submit" class="btn btn-primary mt-5">Submit</button>
     </form>
   </div>
 
