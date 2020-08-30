@@ -36,8 +36,9 @@
   <section class="row my-5">
     {% for img in user.images.all %}
     <div class="col-lg-3 pb-3"> 
-      <a href="{{img.image.url}}"  data-lightbox="userImages" download >
-        <img class="wow animate__fadeInUp" data-wow-duration="0.7s" alt="userImage" src="{{img.image.url}}" /> download
+      <a href="{{img.image.url}}"  data-lightbox="userImages" >
+        <img class="wow animate__fadeInUp" data-wow-duration="0.7s" alt="userImage" src="{{img.image.url}}" /> 
+     <a href="{{img.image.url}}" download="">Download</a>
       </a>
     </div>
     {% endfor %}
