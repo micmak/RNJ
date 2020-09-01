@@ -1,6 +1,6 @@
-from django.contrib import messages
 from django.contrib.auth.models import User
-from django.shortcuts import render, redirect
+from django.http import JsonResponse
+from django.shortcuts import render
 from django.views.generic import View
 
 from .models import UserImage
@@ -18,11 +18,9 @@ class UploadImages(View):
         client = User.objects.filter(username=request.POST.get('client', None)).first()
 
         if not client:
-            messages.error(request, 'User doesn\'t exist!')
-            return redirect('upload_images')
+            return JsonResponse({'msg': 'Please select a client'}, status=400)
         
         for img in request.FILES.getlist('images'):
             UserImage.objects.create(owner=client, image=img)
-
-        messages.success(request, F'Images uploaded for user {client.username}')
-        return redirect('upload_images')
+        
+        return JsonResponse({'msg': 'Uploaded successfuly'})

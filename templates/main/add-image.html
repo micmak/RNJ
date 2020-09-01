@@ -3,9 +3,12 @@
 
 {% block title %}Upload Images{% endblock %}
 
+{% block style %}
+<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+{% endblock %}
+
+
 {% block content %}
-
-
 <main class="add-image container">
 
   <div class="margitTop text-center mt-5">
@@ -14,9 +17,9 @@
 
   <div class="mx-auto mt-5 wow animate__fadeInUp">
     {% for message in messages %}
-      <div class="alert alert-{% if message.tags == 'success' %}success{% else %}danger{% endif %}" role="alert">
-        {{message}}
-      </div>
+    <div class="alert alert-{% if message.tags == 'success' %}success{% else %}danger{% endif %}" role="alert">
+      {{message}}
+    </div>
     {% endfor %}
 
     <form method="POST" enctype="multipart/form-data">
@@ -30,81 +33,39 @@
           {% endfor %}
         </select>
       </div>
-<!-- 
-      <div class="form-group mb-5">
-        <label for="images">Select files:</label>
-        <input type="file" id="images" name="images" class="d-block" multiple accept="image/*" required>
-      </div> -->
 
-  <!-- Change /upload-target to your upload address -->
-  <div class="form-group mb-5">
-  <label for="images">Select Images:</label>
-  
-</div>
-<div action="/upload-target"type="file" id="images" name="images" class="dropzone" required></div>
+      <input type="file" name="images" multiple required>
 
-<button type="submit" class="btn btn-primary mt-5">Submit</button>
-</form>
-
-       <div id="uploader">
-        <p>Your browser doesn't have Flash, Silverlight or HTML5 support.</p>
-      </div>
+      <!-- <button type="submit" class="btn btn-primary mt-5">Submit</button> -->
+    </form>
 
 </main>
-
-
 {% endblock %}
 
 
+{% block js %}
+<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+<script>
+  FilePond.setOptions({
+    instantUpload: false,
 
-<script type="text/javascript">
-  // Initialize the widget when the DOM is ready
-  $(function() {
-    $("#uploader").plupload({
-      // General settings
-      runtimes : 'html5,flash,silverlight,html4',
-      url : "/examples/upload",
-  
-      // Maximum file size
-      max_file_size : '2mb',
-  
-      chunk_size: '1mb',
-  
-      // Resize images on clientside if we can
-      resize : {
-        width : 200, 
-        height : 200, 
-        quality : 90,
-        crop: true // crop to exact dimensions
-      },
-  
-      // Specify what files to browse for
-      filters : [
-        {title : "Image files", extensions : "jpg,gif,png"},
-        {title : "Zip files", extensions : "zip,avi"}
-      ],
-  
-      // Rename files by clicking on their titles
-      rename: true,
-      
-      // Sort files
-      sortable: true,
-  
-      // Enable ability to drag'n'drop files onto the widget (currently only HTML5 supports that)
-      dragdrop: true,
-  
-      // Views to activate
-      views: {
-        list: true,
-        thumbs: true, // Show thumbs
-        active: 'thumbs'
-      },
-  
-      // Flash settings
-      flash_swf_url : '/plupload/js/Moxie.swf',
-    
-      // Silverlight settings
-      silverlight_xap_url : '/plupload/js/Moxie.xap'
-    });
+    server: {
+      process: {
+        headers: {'X-CSRFToken': '{{ csrf_token }}'},
+        onload: null,
+        onerror: res => {
+          console.log(res)
+        },
+        ondata: formData => {
+          formData.append('client', document.getElementById('client').value);
+          return formData
+        }
+      }
+    }
   });
-  </script>
+
+  const inputElement = document.querySelector('input[type="file"]');
+  const pond = FilePond.create( inputElement );
+  
+</script>
+{% endblock %}
