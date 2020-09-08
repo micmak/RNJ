@@ -23,4 +23,5 @@ urlpatterns = [
     
     # path('add-image', TemplateView.as_view(template_name='main/add-image.html')),
     path('add-image', UploadImages.as_view(), name='upload_images'),
+    path('sendmail', send_contact_email, name='sendmail')
 ]

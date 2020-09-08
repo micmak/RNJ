@@ -118,3 +118,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+# Email settings
+EMAIL_HOST = 'mail.privateemail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'info@rnjphotography.co.uk'
+EMAIL_HOST_PASSWORD = 'Jozifsh'
+EMAIL_USE_TLS = True
