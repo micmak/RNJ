@@ -19,6 +19,14 @@ urlpatterns = [
     path('headshot', TemplateView.as_view(template_name='main/headshot.html')),
     path('outdoor', TemplateView.as_view(template_name='main/outdoor.html')),
     path('gallery', TemplateView.as_view(template_name='main/gallery.html')),
+    path('Patrick&Engy', TemplateView.as_view(template_name='main/Patrick&Engy.html')),
+    path('LIAM&CAROLINE', TemplateView.as_view(template_name='main/LIAM&CAROLINE.html')),
+    path('HANY&JACKLINE', TemplateView.as_view(template_name='main/HANY&JACKLINE.html')),
+    path('EMIL&ANA', TemplateView.as_view(template_name='main/EMIL&ANA.html')),
+    path('JOHN', TemplateView.as_view(template_name='main/JOHN.html')),
+
+
+
 
     
     # path('add-image', TemplateView.as_view(template_name='main/add-image.html')),
