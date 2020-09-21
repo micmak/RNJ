@@ -1,0 +1,146 @@
+<div class="">
+  <div class="row">
+    <div class="col-lg-8 mt-3">
+      <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/1.jpg' %}">
+    </div>
+    <div class="col-lg-4 mt-3">
+      <img class="mb-3  wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/2.jpg' %}">
+      <img class=" wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/3.jpg' %}">
+
+    </div>
+
+  </div>
+</div>
+
+<!-- collection image new  -->
+<div class="row">
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/4.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/5.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/6.jpg' %}">
+  </div>
+</div>
+<!-- collection image new  -->
+<div class="row">
+  <div class="col-lg-4 mt-3">
+    <img class=" wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/7.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/8.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/9.jpg' %}">
+  </div>
+</div>
+
+<!-- collection image new  -->
+<div class="row">
+  <div class="col-lg-4 mt-3">
+    <img class=" wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/10.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/11.jpg' %}">
+    <img class="mt-5 wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/13.jpg' %}">
+
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/12.jpg' %}">
+    <img class="mt-5 wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/14.jpg' %}">
+
+  </div>
+</div>
+
+<!-- collection image new  -->
+<div class="row">
+  <div class="col-lg-4 mt-3">
+    <img class=" wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/15.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/16.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/17.jpg' %}">
+  </div>
+</div>
+<!-- collection image new  -->
+<div class="row">
+  <div class="col-lg-4 mt-3">
+    <img class=" wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/18.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/19.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/20.jpg' %}">
+  </div>
+</div>
+<!-- collection image new  -->
+<div class="row">
+  <div class="col-lg-4 mt-3">
+    <img class=" wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/21.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/22.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/23.jpg' %}">
+  </div>
+</div>
+<!-- collection image new  -->
+<div class="row">
+  <div class="col-lg-4 mt-3">
+    <img class=" wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/24.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/25.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/26.jpg' %}">
+  </div>
+</div>
+<!-- collection image new  -->
+<div class="row">
+  <div class="col-lg-4 mt-3">
+    <img class=" wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/27.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/28.jpg' %}">
+  </div>
+  <div class="col-lg-4 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/29.jpg' %}">
+  </div>
+</div>
+<!-- collection image new (4)  -->
+<div class="row">
+  <div class="col-lg-6 mt-3">
+    <img class=" wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/30.jpg' %}">
+  </div>
+  <div class="col-lg-6 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/31.jpg' %}">
+  </div>
+  <div class="col-lg-6 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/32.jpg' %}">
+  </div>    
+    <div class="col-lg-6 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/33.jpg' %}">
+  </div>
+</div>
+<!-- collection image new (4)  -->
+<div class="row">
+  <div class="col-lg-6 mt-3">
+    <img class=" wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/34.jpg' %}">
+  </div>
+  <div class="col-lg-6 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/35.jpg' %}">
+  </div>
+  <div class="col-lg-6 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/36.jpg' %}">
+  </div>    
+    <div class="col-lg-6 mt-3">
+    <img class="wow animate__fadeInRight" data-wow-duration="1s" src="{% static 'img/wedding/wagdy/37.jpg' %}">
+  </div>
+</div>
