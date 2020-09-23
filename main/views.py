@@ -8,6 +8,9 @@ from .models import UserImage
 
 class UploadImages(View):
     def get(self, request):
+        if not request.user.is_superuser:
+            return redirect('/')
+            
         context = {
             'users': User.objects.all()
         }
@@ -35,6 +38,6 @@ def send_contact_email(request):
     message = request.POST.get('message', None)
     origin = request.POST.get('origin', None)
 
-    msg = F'You have new contact request\n\nUser : {name}\nSubject: {subject}\nMessage :{message}'
+    msg = F'You have new contact request\n\nUser : {name}\nSubject: {subject}\nEmail: {email}\nMessage :{message}'
     send_mail('New contact request', msg, 'info@rnjphotography.co.uk', ['info@rnjphotography.co.uk'])
     return redirect(origin)

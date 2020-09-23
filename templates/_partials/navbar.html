@@ -51,7 +51,9 @@
         </button>
         <div class="dropdown-menu">
           <a class="nav-link text-dark" href="/gallery">My Images</a>
+          {% if user.is_superuser %}
           <a class="nav-link text-dark" href="/add-image">Add image</a>
+          {% endif %}
           <div class="dropdown-divider"></div>
 
           <a class="btn btn-outline-dark  my-2 mx-2 my-sm-0" href="{% url 'logout' %} ">Logout</a>
