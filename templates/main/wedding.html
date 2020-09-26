@@ -116,7 +116,7 @@
 <a href="/JOHN">        <h4 class="text-center">See More</h4></a>
       </div>
       <div class="col-lg-8 mx-auto">
-        <img src="{% static 'img/wedding/JOHN/36.jpg' %}" class="border-0 shadow wow animate__fadeIn" data-wow-duration="5s" alt="local wedding photographers">
+        <img src="{% static 'img/wedding/JOHN/9q.jpg' %}" class="border-0 shadow wow animate__fadeIn" data-wow-duration="5s" alt="local wedding photographers">
       </div>
   
   </div>
@@ -583,8 +583,9 @@
 <!-- contact us form -->
 <div class="col-lg-6 marginTop mx-auto">
   <h1 class="my-5 underline-primary">Tell more about your big day</h1>
-  <form action="" method="post">
-    <div class="form-row my-5">
+  <form action="{% url 'sendmail' %}" method="post">
+    {% csrf_token %}
+     <div class="form-row my-5">
       <div class="col-md-6 form-group wow animate__fadeInLeft" data-wow-duration="0.5s">
         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
           data-msg="Please enter at least 4 chars" />

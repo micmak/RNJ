@@ -96,7 +96,9 @@
       <h3>Tell More About Your Big Day</h3>
     </div>
     <div class="col-lg-6 mt-5 mt-lg-0 mx-auto ">
-      <form action="" method="post">
+      <form action="{% url 'sendmail' %}" method="post">
+        {% csrf_token %}
+        
         <div class="form-row">
           <div class="col-md-6 form-group wow animate__fadeInLeft" data-wow-duration="1s">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
