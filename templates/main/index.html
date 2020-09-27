@@ -294,9 +294,10 @@
         </div>
 
         <!-- contact us form -->
-        <div class="col-lg-6 mt-3 ">
+        <div class="col-lg-6 mt-3 col-lg-4 mx-auto text-center">
           <form action="{% url 'sendmail' %}" method="post">
             {% csrf_token %}
+
             <div class="form-row">
               <div class="col-md-6 form-group wow animate__fadeInLeft" data-wow-duration="0.5s">
                 <input type="text" name="name" class="form-control" placeholder="Your Name"/>
@@ -304,17 +305,23 @@
               <div class="col-md-6 form-group">
                 <input type="email" class="form-control wow animate__fadeInRight" data-wow-duration="0.5s" name="email" placeholder="Your Email" />
               </div>
+           
+            <div class="col-md-6 form-group">
+              <input type="text" name="contact" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" placeholder="Your Contact Number" />
             </div>
-            <div class="form-group">
-              <input type="text" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" name="subject" placeholder="Subject" />
+            <div class="col-md-6 form-group">
+              <input type="text" name="when" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" placeholder="When Is The Big Day?" />
             </div>
-            <div class="form-group">
-              <textarea class="form-control wow animate__fadeInUp" data-wow-duration="0.5s" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="col-lg-12 form-group">
+              <input type="text" name="where" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" placeholder="Where Are You Getting Married?" />
+            </div>
+            <div class="col-lg-12 form-group">
+              <textarea class="form-control wow animate__fadeInUp" data-wow-duration="0.5s" name="more" rows="5" placeholder="More Information About The Big Day"></textarea>
             </div>
 
             <input type="hidden" name="origin" value="{{request.path}}">
 
-            <div class="text-center mb-3">
+            <div class="text-center col-lg-12 mb-3">
               <button class="btn btn-dark wow animate__fadeInLeft" data-wow-duration="0.5s" type="submit">Send Message</button>
             </div>
           </form>

@@ -6,6 +6,7 @@ from django.core.mail import send_mail
 from .models import UserImage
 
 
+
 class UploadImages(View):
     def get(self, request):
         if not request.user.is_superuser:
@@ -34,10 +35,12 @@ from django.urls import resolve
 def send_contact_email(request):
     email = request.POST.get('email', None)
     name = request.POST.get('name', None)
-    subject = request.POST.get('subject', None)
-    message = request.POST.get('message', None)
+    contact = request.POST.get('contact', None)
+    when = request.POST.get('when', None)
+    where = request.POST.get('where', None)
+    more = request.POST.get('more', None)
     origin = request.POST.get('origin', None)
 
-    msg = F'You have new contact request\n\nUser : {name}\nSubject: {subject}\nEmail: {email}\nMessage :{message}'
+    msg = F'You have new contact request\n\nUser : {name}\nEmail:{email}\nContact:{contact}\nWhen: {when}\nWhere:{where}\nMore: {more}'
     send_mail('New contact request', msg, 'info@rnjphotography.co.uk', ['info@rnjphotography.co.uk'])
     return redirect(origin)

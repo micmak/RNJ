@@ -577,47 +577,49 @@
   </div>
 </div>
 
+        <!-- contact us form -->
+        <div class="col-lg-6 mt-3 col-lg-4 mx-auto my-5 text-center">
+          
 
+<div class="cotainer mb-5">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="my-5 mb-5 text-center underline-primary">Tell more about your big day</h1>
 
-<!-- contact form  -->
-<!-- contact us form -->
-<div class="col-lg-6 marginTop mx-auto">
-  <h1 class="my-5 underline-primary">Tell more about your big day</h1>
-  <form action="{% url 'sendmail' %}" method="post">
-    {% csrf_token %}
-     <div class="form-row my-5">
-      <div class="col-md-6 form-group wow animate__fadeInLeft" data-wow-duration="0.5s">
-        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-          data-msg="Please enter at least 4 chars" />
-      </div>
-      <div class="col-md-6 form-group">
-        <input type="email" class="form-control wow animate__fadeInRight" data-wow-duration="0.5s" name="email"
-          id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-      </div>
-      <div class="col-md-6 form-group wow animate__fadeInLeft" data-wow-duration="0.5s">
-        <input type="text" name="name" class="form-control" id="name" placeholder="Contact Number" data-rule="minlen:4"
-          data-msg="Please enter at least 4 chars" />
-      </div>
-      <div class="col-md-6 form-group">
-        <input type="email" class="form-control wow animate__fadeInRight" data-wow-duration="0.5s" name="email"
-          id="email" placeholder="When Is The Big Day?" data-rule="email" data-msg="Please enter a valid email" />
-      </div>
-
-
-      <div class="col-md-12 form-group">
-        <textarea class="form-control wow animate__fadeInUp" data-wow-duration="0.5s" name="message" rows="5"
-          data-rule="required" data-msg="Please write something for us"
-          placeholder="More Information About The Big Day"></textarea>
-      </div>
     </div>
-
-    <div class="text-center">
-      <button class="btn btn-primary wow animate__fadeInLeft" data-wow-duration="0.5s" type="submit">Send
-        Message</button>
-    </div>
-  </form>
-
+  </div>
 </div>
+          <form action="{% url 'sendmail' %}" method="post">
+            {% csrf_token %}
+
+            <div class="form-row">
+              <div class="col-md-6 form-group wow animate__fadeInLeft" data-wow-duration="0.5s">
+                <input type="text" name="name" class="form-control" placeholder="Your Name"/>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control wow animate__fadeInRight" data-wow-duration="0.5s" name="email" placeholder="Your Email" />
+              </div>
+           
+            <div class="col-md-6 form-group">
+              <input type="text" name="contact" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" placeholder="Your Contact Number" />
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="text" name="when" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" placeholder="When Is The Big Day?" />
+            </div>
+            <div class="col-lg-12 form-group">
+              <input type="text" name="where" class="form-control wow animate__fadeIn" data-wow-duration="0.5s" placeholder="Where Are You Getting Married?" />
+            </div>
+            <div class="col-lg-12 form-group">
+              <textarea class="form-control wow animate__fadeInUp" data-wow-duration="0.5s" name="more" rows="5" placeholder="More Information About The Big Day"></textarea>
+            </div>
+
+            <input type="hidden" name="origin" value="{{request.path}}">
+
+            <div class="text-center col-lg-12 mb-3">
+              <button class="btn btn-dark wow animate__fadeInLeft" data-wow-duration="0.5s" type="submit">Send Message</button>
+            </div>
+          </form>
+
 </main>
 
 
