@@ -23,11 +23,10 @@ urlpatterns = [
     path('HANY&JACKLINE', TemplateView.as_view(template_name='main/HANY&JACKLINE.html')),
     path('EMIL&ANA', TemplateView.as_view(template_name='main/EMIL&ANA.html')),
     path('JOHN', TemplateView.as_view(template_name='main/JOHN.html')),
+    path('ADRIAN&ALETA', TemplateView.as_view(template_name='main/ADRIAN&ALETA.html')),
 
 
-
-
-    
+  
     # path('add-image', TemplateView.as_view(template_name='main/add-image.html')),
     path('add-image', UploadImages.as_view(), name='upload_images'),
     path('sendmail', send_contact_email, name='sendmail')
