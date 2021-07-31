@@ -14,6 +14,7 @@ urlpatterns = [
     path('newborn', TemplateView.as_view(template_name='main/newborn.html')),
     path('children-family', TemplateView.as_view(template_name='main/children-family.html')),
     path('cake-smash', TemplateView.as_view(template_name='main/cake-smash.html')),
+    path('parties-events', TemplateView.as_view(template_name='main/parties-events.html')),
     path('free', TemplateView.as_view(template_name='main/free.html')),
     path('black-white', TemplateView.as_view(template_name='main/black-white.html')),
     path('headshot', TemplateView.as_view(template_name='main/headshot.html')),
